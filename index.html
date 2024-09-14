@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+
+            <div id="resumePreview" class="resume-section">
+            <h2 id="resumeName">Javeria Fatima</h2>
+            <p><strong>Email:</strong> <span id="resumeEmail">fatimajaveria409@gmail.com</span></p>
+            <h3>Education</h3>
+            <p id="resumeEducation">intermidiate student</p>
+            <h3>Skills</h3>
+            <p id="resumeSkills">JavaScript, TypeScript, HTML, CSS</p>
+            <h3>Work Experience</h3>
+            <p id="resumeExperience">Software Developer at XYZ Company</p>
+        </div>
+        
+        <form id="resumeForm" class="form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <textarea id="education" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Skills:</label>
+                <textarea id="skills" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Work Experience:</label>
+                <textarea id="experience" required></textarea>
+            </div>
+
+            <button type="button" id="generateResume">Generate Resume</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
